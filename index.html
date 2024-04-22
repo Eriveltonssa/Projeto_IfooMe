@@ -13,27 +13,38 @@
 
     <!-- MENU DEVICE -->
     <nav id="menu_device">
-        <button id="home" onclick="navigateTo('index')"><img src="resources/img/icon-white-menu/home.png" alt=""></button>
+        <button id="home" onclick="home()"><img src="resources/img/icon-white-menu/home.png" alt=""></button>
        
-        <button id="lupa" onclick="navigateTo('lupa')"><img src="resources/img/icon-white-menu/lupa.png" alt=""></button>
-        <button id="pedidos" onclick="navigateTo('pedidos')"><img src="resources/img/icon-white-menu/pedidos.png" alt=""></button>
-        <button id="perfil" onclick="navigateTo('perfil')"><img src="resources/img/icon-white-menu/perfil.png" alt=""></button>
+        <button id="lupa" onclick="lupa()"><img src="resources/img/icon-white-menu/lupa.png" alt=""></button>
+        <button id="pedidos" onclick="pedidos()"><img src="resources/img/icon-white-menu/pedidos.png" alt=""></button>
+        <button id="perfil" onclick="perfil()"><img src="resources/img/icon-white-menu/perfil.png" alt=""></button>
       
     </nav>
-
-    <div id="content">
-   <h1>oi mundo</h1>
-    </div>
-    <!-- <div id="span-menu-device" >
+    <div id="span-menu-device" >
         <span id="span-home" >Home</span>
         <span id="span-lupa">Pesquisar</span>
         <span id="span-pedidos">Pedidos</span>
         <span id="span-perfil">Perfil</span>
-    </div> -->
+    </div>
+
+
+    <!-- SECTION DEVICE PERFIL -->
+    <section id="perfil-device" > 
+      <button id="btn-close-device" onclick="fecharMenu()">x</button>
+
+      <div id="img-perfil-device">
+
+      </div>
+      <div id="titulo-menu-perfil-device">
+
+      </div>
+      <div id="opcao-perfil-device">
+        <h1>opções</h1>
+      </div>
 
 
 
-    
+    </section>
 
     
 
@@ -42,5 +53,6 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="resources/js/principal.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
