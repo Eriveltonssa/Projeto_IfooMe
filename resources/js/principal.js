@@ -33,12 +33,12 @@ function showSpanElements() {
     spanHome.style.marginBottom = '8vh';
     spanHome.style.backgroundColor = '#00998b';
     spanHome.style.width = '24vw';
-    setTimeout(() => {
+    // setTimeout(() => {
 
-        setTimeout(() => {
-            spanHome.style.display = 'none';
-        }, 1000); // 
-    }, 4000);
+    //     setTimeout(() => {
+    //         spanHome.style.display = 'none';
+    //     }, 1000); // 
+    // }, 4000);
 }
 
 
