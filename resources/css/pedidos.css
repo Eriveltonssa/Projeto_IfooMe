@@ -1,0 +1,122 @@
+/* MIDIA SCREEN 480 DEVICE */
+
+@media screen and (max-width:480px) {
+    #menu_device {
+        border: 1px solid white;
+
+        width: 100%;
+        height: 8vh;
+        position: fixed;
+        background-color: rgb(77, 46, 46);
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: var(--color-menu);
+        z-index: 10;
+    }
+
+    #menu_device button {
+        background-color: inherit;
+        border: none;
+        border-left: 1px solid var(--bk-color-white);
+        border-right: 1px solid var(--bk-color-white);
+        height: 100%;
+        width: 33%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s ease-in-out;
+
+    }
+
+    #menu_device button:hover {
+        background-color: var(--color-button);
+    }
+    #menu_device button img{
+        width: 7vw;
+        
+        
+    }
+
+    #span-menu-device {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        bottom: 0;
+
+        width: 100%;
+        margin-bottom: 6vh;
+        display: none;
+
+
+    }
+
+    #span-menu-device span {
+        background-color: var(--color-black);
+        color: white;
+        font-size: 4vw;
+        width: 25%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        animation-name: slide_span;
+        animation-duration: 1s;
+      
+       
+
+    }
+
+  
+    @keyframes slide_span {
+        0% {
+            transform: translateY(100%);
+        }
+
+        100% {
+            transform: translateY(0%);
+        }
+    }
+      /* usado no javascript */
+    @keyframes slide_span_bootom {
+        0% {
+            transform: translateY(0%);
+        }
+
+        100% {
+            transform: translateY(100%);
+        }
+
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+
+  /* perfil-device */
+
+  #pedidos-device{
+    border: 1px solid black;
+    background-color: rgb(63, 75, 75);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+
+
+
+
+
+
+
+}
