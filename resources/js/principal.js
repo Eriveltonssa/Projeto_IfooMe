@@ -65,31 +65,66 @@ function lupa() {
 }
 
 
-function perfil(){
-    let menuDevice = document.getElementById(`perfil-device`)
-   if(menuDevice.style.display === 'none' || menuDevice.style.display === ''){
-    menuDevice.style.display = 'flex'
-   }else{
-    menuDevice.style.display = 'none'
-   }
+function perfil() {
+    let menuDevice = document.getElementById(`perfil-device`);
+
+    if (menuDevice.style.display === 'none' || menuDevice.style.display === '') {
+       
+        menuDevice.style.display = 'flex';
+    } else {
+       
+        menuDevice.style.display = 'none';
+    }
+}
+
+function fecharMenu() {
+    let menuDevice = document.getElementById(`perfil-device`);
+
+    if (menuDevice.style.display === 'flex') {
+        menuDevice.style.display = 'none'
+      
+       
+        
+    }
+    else{
+        menuDevice.style.display = 'flex'
+    }
+}
+
+// document.body.addEventListener("click", function(event) {
+//     let menuDevice = document.getElementById("perfil-device");
+//     let targetElement = event.target;
+
+//     // Verificar se o clique foi dentro do menu ou no botão que abre o menu
+//     if (!menuDevice.contains(targetElement)) {
+//         // O clique foi fora do menu, então feche o menu se estiver aberto
+//         if (menuDevice.classList.contains("show")) {
+//             menuDevice.classList.remove("show");
+//         }
+//     }
+// });
 
 
 
+
+
+// git
+function git() {
+    // https://github.com/Eriveltonssa
+    if (confirm('Deseja ir à página do desenvolvedor?')) {
+        location.href = 'https://github.com/Eriveltonssa';
+    }
+}
+
+function whatsapp(){
+    if(confirm("Deseja abrir uma conversa com o Desenvolvedor?")){
+        location.href = 'https://api.whatsapp.com/send?phone=5571987348610'
+    }
 }
 
 
 
 
-function fecharMenu(){
-let menuDevice = document.getElementById(`perfil-device`)
-
-if(menuDevice.style.display = 'block'){
-    menuDevice.style.display = 'none'
-
-   }else{
-    menuDevice.style.display = 'block'
-   }  
 
 
-}
 
