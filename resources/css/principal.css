@@ -110,7 +110,7 @@
     #perfil-device{
         width: 80%;
         height: 100vh;
-        position: absolute;
+        position:fixed;
         top: 0;
         bottom: 0;
         border-radius: 0px 20px 20px 0px;
@@ -224,7 +224,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-bottom: 1vh;
+   margin-bottom: 5vh;
 
 }
 #rodape-menu div{
