@@ -91,24 +91,9 @@ function fecharMenu() {
     }
 }
 
-// document.body.addEventListener("click", function(event) {
-//     let menuDevice = document.getElementById("perfil-device");
-//     let targetElement = event.target;
-
-//     // Verificar se o clique foi dentro do menu ou no botão que abre o menu
-//     if (!menuDevice.contains(targetElement)) {
-//         // O clique foi fora do menu, então feche o menu se estiver aberto
-//         if (menuDevice.classList.contains("show")) {
-//             menuDevice.classList.remove("show");
-//         }
-//     }
-// });
 
 
-
-
-
-// git
+// link  git
 function git() {
     // https://github.com/Eriveltonssa
     if (confirm('Deseja ir à página do desenvolvedor?')) {
@@ -122,6 +107,23 @@ function whatsapp(){
     }
 }
 
+
+
+function selectImage() {
+    document.getElementById('file-input').click();
+}
+
+document.getElementById('file-input').addEventListener('change', function() {
+    const file = this.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const profilePic = document.getElementById('profile-pic');
+            profilePic.src = e.target.result;
+        }
+        reader.readAsDataURL(file);
+    }
+});
 
 
 

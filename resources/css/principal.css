@@ -185,6 +185,51 @@
     padding: 1rem;
     
 }
+#img-perfil-device{
+ 
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: flex-start;
+   
+}
+#img-perfil-device #foto-perfil{
+    border: 1px solid red;
+     width: 100%;
+    display: flex; 
+    align-items: center;
+    gap: 2vw;
+    color: var(--bk-color-white);
+    margin-top: 5vh;
+
+}
+.profile-container{
+    display: flex; 
+    gap: 2vw; 
+    margin-left: 2vw;
+}
+
+.profile-container {
+    position: relative;
+    width: 18vw; /* Tamanho relativo à largura da janela do navegador */
+    height: 18vw; /* Tamanho relativo à largura da janela do navegador */
+    overflow: hidden;
+    border-radius: 50%;
+   
+}
+
+#profile-pic {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    object-fit: cover; 
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
 #opcao-perfil-icon{
  
     display: flex;
@@ -224,7 +269,9 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-bottom: 5vh;
+   margin-bottom: 10vh;
+   border-top: 2px solid rgba(0, 0, 0, 0.295);
+   
 
 }
 #rodape-menu div{
@@ -235,6 +282,7 @@
    justify-content: center;
    border-radius: 0px 0px 20px 0px;
    gap: 3vw;
+   margin-top: 2vh;
 }
 #rodape-menu img {
     width: 8vw;
