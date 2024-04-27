@@ -10,13 +10,13 @@ function home() {
     spanPerfil.style.display = 'none';
 }
 
-let spanMenuDevice; 
+let spanMenuDevice;
 window.onload = function () {
     showSpanElements();
 };
 
 function showSpanElements() {
-    spanMenuDevice = document.getElementById('span-menu-device'); 
+    spanMenuDevice = document.getElementById('span-menu-device');
     let spanHome = document.getElementById('span-home');
 
     if (!spanMenuDevice) {
@@ -40,6 +40,27 @@ function showSpanElements() {
         }, 1000); // 
     }, 4000);
 }
+// home 
+function home(){
+    let home = document.getElementById(`section-home`)
+    var perfilDevice = document.getElementById(`perfil-device`)
+    var configPerfil = document.getElementById(`configuracao-device`)
+
+
+   if( perfilDevice.style.display = 'flex'){
+     perfilDevice.style.display = 'none'
+   }
+    if(home.style.display === 'none' || home.style.display ===''){
+        home.style.display = 'flex'   
+    }
+    if(configPerfil.style.display = 'flex'){
+        configPerfil.style.display = 'none'
+    }
+}
+
+
+
+
 
 
 function lupa() {
@@ -69,10 +90,10 @@ function perfil() {
     let menuDevice = document.getElementById(`perfil-device`);
 
     if (menuDevice.style.display === 'none' || menuDevice.style.display === '') {
-       
+
         menuDevice.style.display = 'flex';
     } else {
-       
+
         menuDevice.style.display = 'none';
     }
 }
@@ -82,14 +103,24 @@ function fecharMenu() {
 
     if (menuDevice.style.display === 'flex') {
         menuDevice.style.display = 'none'
-      
-       
-        
+
+
+
     }
-    else{
+    else {
         menuDevice.style.display = 'flex'
     }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -101,8 +132,8 @@ function git() {
     }
 }
 
-function whatsapp(){
-    if(confirm("Deseja abrir uma conversa com o Desenvolvedor?")){
+function whatsapp() {
+    if (confirm("Deseja abrir uma conversa com o Desenvolvedor?")) {
         location.href = 'https://api.whatsapp.com/send?phone=5571987348610'
     }
 }
@@ -111,19 +142,42 @@ function whatsapp(){
 
 function selectImage() {
     document.getElementById('file-input').click();
+
 }
 
-document.getElementById('file-input').addEventListener('change', function() {
+document.getElementById('file-input').addEventListener('change', function () {
     const file = this.files[0];
     if (file) {
         const reader = new FileReader();
-        reader.onload = function(e) {
+        reader.onload = function (e) {
             const profilePic = document.getElementById('profile-pic');
             profilePic.src = e.target.result;
         }
         reader.readAsDataURL(file);
     }
 });
+
+function salvarImagem() {
+    let nome = document.getElementById('nome-device-perfil').value;
+    let salvar = document.getElementById('btn-salvarNome');
+    let nomeUsuario = document.getElementById(`nomeUsuario`)
+   
+    if (nome === '') {
+        alert('Informe seu nome.');
+        return;
+    } else {
+        // Salvando o nome no localStorage
+      var nomeSalvo =  localStorage.setItem('Nome', JSON.stringify(nome));
+        salvar.style.display = 'none';
+    }
+    // Recuperando o nome do localStorage e exibindo no console
+    var nomeRecuperado = localStorage.getItem('Nome');
+    console.log(nomeRecuperado);
+
+    nomeUsuario.innerHTML = nomeRecuperado
+
+}
+
 
 
 

@@ -18,7 +18,7 @@ html,body {
     --bk-color-white: #ffffff;
     --color-black: #21212198;
     --color-black-heavy: #000000;
-    --color-text: #4f4f4f;
+    --color-text: #4f4f4fde;
     --color-text-out: #90908e;
     --color-button: #00998b;
     --color-menu: #32c7aa;
@@ -26,4 +26,6 @@ html,body {
     --color-red: #e74c3c;
     --color-green: #2ecc71;
     --color-separate: #cccccc00;
+    --color-bk-home: #76f9bea4;
+    --color-bk-home-2: #1cb7a5ab;
 }
